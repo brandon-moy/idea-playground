@@ -13,8 +13,8 @@ function PokemonCard({ pokemon }: Prop) {
   const pokeNum = pokemon.url.split("/").reverse()[1];
 
   return (
-    <div>
-      <div className="relative w-full">
+    <div className="px-8 border border-rounded">
+      <div className="relative">
         <Image
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeNum}.png`}
           alt={pokemon.name}
@@ -24,7 +24,7 @@ function PokemonCard({ pokemon }: Prop) {
       </div>
       <div className="py-4 flex flex-col gap-3">
         <div className="flex justify-between items-center gap-1">
-          <h2 className="font-bold text-white text-xl line-clamp-1 w-full capitalize">
+          <h2 className="font-bold text-black text-xl line-clamp-1 w-full capitalize">
             {pokemon.name}
           </h2>
         </div>
