@@ -7,21 +7,19 @@ export interface PokemonProp {
 
 interface Prop {
   pokemon: PokemonProp;
-  index: number;
 }
 
-function PokemonCard({ pokemon, index }: Prop) {
+function PokemonCard({ pokemon }: Prop) {
   const pokeNum = pokemon.url.split("/").reverse()[1];
-  console.log(pokeNum);
 
   return (
     <div>
-      <div className="relative w-full h-[37vh]">
+      <div className="relative w-full">
         <Image
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeNum}.png`}
           alt={pokemon.name}
-          fill
-          className="rounded-xl"
+          width="100"
+          height="100"
         />
       </div>
       <div className="py-4 flex flex-col gap-3">

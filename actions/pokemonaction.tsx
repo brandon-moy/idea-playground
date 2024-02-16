@@ -10,6 +10,6 @@ export const fetchPokemon = async (count: number) => {
   const data = await response.json();
 
   return data.results.map((item: PokemonProp, index: number) => (
-    <PokemonCard key={item.name} pokemon={item} index={index} />
+    <PokemonCard key={item.name} pokemon={item} />
   ));
 };
