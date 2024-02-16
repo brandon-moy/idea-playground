@@ -2,9 +2,9 @@
 
 import PokemonCard, { PokemonProp } from "@/components/PokemonCard";
 
-export const fetchPokemon = async (count: number) => {
+export const fetchPokemon = async (offset: number) => {
   const response = await fetch(
-    `https://pokeapi.co/api/v2/pokemon/?limit=10&offset${count}`
+    `https://pokeapi.co/api/v2/pokemon/?limit=8&offset=${offset}`
   );
 
   const data = await response.json();
