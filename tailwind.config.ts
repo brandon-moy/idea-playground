@@ -12,6 +12,14 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "card-gradient":
+          "linear-gradient(#1E354A, #1E354A 3px, transparent 3px, transparent 9px)",
+      },
+      keyframes: {
+        cardPan: {
+          "0%": { "background-position": "0% 0%" },
+          "100%": { "background-position": "0% -100%" },
+        },
       },
       aspectRatio: {
         card: "10 / 16",
