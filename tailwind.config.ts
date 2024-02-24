@@ -13,7 +13,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "card-gradient":
-          "linear-gradient(#1E354A, #1E354A 3px, transparent 3px, transparent 9px)",
+          "linear-gradient(#4A9560, #4A9560 2px, transparent 2px, transparent 9px)",
       },
       backgroundSize: {
         shrink: "100% 9px",
@@ -22,6 +22,42 @@ const config: Config = {
         cardPan: {
           "0%": { "background-position": "0% 0%" },
           "100%": { "background-position": "0% -100%" },
+        },
+        cardImagePan: {
+          "0%": { "background-position": "36% 42%", "background-size": "200%" },
+          "20%": {
+            "background-position": "30% 35%",
+            "background-size": "200%",
+          },
+          "20.0001%": {
+            "background-position": "60% 85%",
+            "background-size": "500%",
+          },
+          "40%": {
+            "background-position": "49% 81%",
+            "background-size": "500%",
+          },
+          "40.0001%": {
+            "background-position": "80% 42%",
+            "background-size": "300%",
+          },
+          "60%": {
+            "background-position": "84% 33%",
+            "background-size": "300%",
+          },
+          "60.0001%": {
+            "background-position": "0% 0%",
+            "background-size": "300%",
+          },
+          "80%": { "background-position": "15% 4%", "background-size": "300%" },
+          "80.0001%": {
+            "background-position": "80% 10%",
+            "background-size": "300%",
+          },
+          "100%": {
+            "background-position": "72% 14%",
+            "background-size": "300%",
+          },
         },
       },
       aspectRatio: {
