@@ -24,10 +24,10 @@ const config: Config = {
           "100%": { "background-position": "0% -100%" },
         },
         cardImagePan: {
-          "0%": { "background-position": "36% 42%", "background-size": "200%" },
+          "0%": { "background-position": "36% 42%", "background-size": "250%" },
           "20%": {
             "background-position": "30% 35%",
-            "background-size": "200%",
+            "background-size": "250%",
           },
           "20.0001%": {
             "background-position": "60% 85%",
@@ -39,11 +39,11 @@ const config: Config = {
           },
           "40.0001%": {
             "background-position": "80% 42%",
-            "background-size": "300%",
+            "background-size": "350%",
           },
           "60%": {
             "background-position": "84% 33%",
-            "background-size": "300%",
+            "background-size": "350%",
           },
           "60.0001%": {
             "background-position": "0% 0%",
@@ -52,11 +52,11 @@ const config: Config = {
           "80%": { "background-position": "15% 4%", "background-size": "300%" },
           "80.0001%": {
             "background-position": "80% 10%",
-            "background-size": "300%",
+            "background-size": "400%",
           },
           "100%": {
             "background-position": "72% 14%",
-            "background-size": "300%",
+            "background-size": "400%",
           },
         },
       },
