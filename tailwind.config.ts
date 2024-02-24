@@ -15,6 +15,9 @@ const config: Config = {
         "card-gradient":
           "linear-gradient(#1E354A, #1E354A 3px, transparent 3px, transparent 9px)",
       },
+      backgroundSize: {
+        shrink: "100% 9px",
+      },
       keyframes: {
         cardPan: {
           "0%": { "background-position": "0% 0%" },
