@@ -62,6 +62,10 @@ const config: Config = {
             "background-size": "400%",
           },
         },
+        "letter-jump": {
+          "0%, 50%": { transform: "translateY(0px)" },
+          "25%": { transform: "translateY(-5px)" },
+        },
       },
       aspectRatio: {
         card: "10 / 16",

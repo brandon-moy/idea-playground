@@ -1,3 +1,5 @@
+import NikkeLetter from "./nikke-letter";
+
 export default function NikkeLoader() {
   return (
     // main container
@@ -10,9 +12,9 @@ export default function NikkeLoader() {
         <div></div>
       </div>
       {/* LOADING... container */}
-      <div className="flex font-st-mono">
-        <p>L</p>
-        <p>O</p>
+      <div className="flex font-st-mono text-gray-300">
+        <NikkeLetter letter="L" delay={75} />
+        <NikkeLetter letter="O" delay={100} />
         <p>A</p>
         <p>D</p>
         <p>I</p>
