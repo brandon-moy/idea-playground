@@ -9,7 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        "letter-jump": "letter-bounce 5s linear infinite",
+        "letter-jump": "letter-bounce 2.5s linear infinite",
+      },
+      animationDelay: {
+        250: "250ms",
+        750: "750ms",
+        1250: "1250ms",
+        1750: "1750ms",
+        2250: "2250ms",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -66,8 +73,8 @@ const config: Config = {
           },
         },
         "letter-bounce": {
-          "0%, 10%": { transform: "translateY(0px)" },
-          "5%": { transform: "translateY(-5px)" },
+          "0%, 20%": { transform: "translateY(0px)" },
+          "10%": { transform: "translateY(-5px)" },
         },
       },
       aspectRatio: {
