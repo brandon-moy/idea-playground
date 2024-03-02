@@ -18,6 +18,9 @@ const config: Config = {
       backgroundSize: {
         shrink: "100% 9px",
       },
+      fontFamily: {
+        "st-mono": "Share Tech Mono",
+      },
       keyframes: {
         cardPan: {
           "0%": { "background-position": "0% 0%" },
