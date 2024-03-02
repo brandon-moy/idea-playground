@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        "letter-jump": "letter-bounce 5s linear infinite",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -62,9 +65,9 @@ const config: Config = {
             "background-size": "400%",
           },
         },
-        "letter-jump": {
-          "0%, 50%": { transform: "translateY(0px)" },
-          "25%": { transform: "translateY(-5px)" },
+        "letter-bounce": {
+          "0%, 10%": { transform: "translateY(0px)" },
+          "5%": { transform: "translateY(-5px)" },
         },
       },
       aspectRatio: {
@@ -72,6 +75,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animation-delay")],
 };
 export default config;
