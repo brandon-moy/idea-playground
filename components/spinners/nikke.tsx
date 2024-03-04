@@ -3,7 +3,7 @@ export default function NikkeLoader() {
     // main container
     <div className="p-10 w-[125px] h-[125px]">
       {/* x  container */}
-      <div className="flex w-full h-full flex-wrap">
+      <div className="flex w-full h-full flex-wrap mb-2 scale-90 animate-[nikkeLoad_5s_linear_infinite]">
         <div className="relative basis-1/2">
           <div className="w-[15px] h-[2.5px] bg-gray-300 rotate-45 absolute translate-x-1 translate-y-[0.6rem]"></div>
           <div className="w-[15px] h-[4px] bg-gray-300 -rotate-45 absolute translate-x-[0.23rem] translate-y-[0.55rem] border-t-[1.5px] border-black"></div>

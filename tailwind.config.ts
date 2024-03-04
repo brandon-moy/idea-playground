@@ -76,6 +76,17 @@ const config: Config = {
           "0%, 20%": { transform: "translateY(0px)" },
           "10%": { transform: "translateY(-5px)" },
         },
+        nikkeLoad: {
+          "0%": { transform: "scale(0.9) rotate(0deg)" },
+          "12.5%": { transform: "scale(1.1) rotate(45deg)" },
+          "25%": { transform: "scale(0.9) rotate(90deg)" },
+          "37.5%": { transform: "scale(1.1) rotate(135deg)" },
+          "50%": { transform: "scale(0.9) rotate(180deg)" },
+          "62.5%": { transform: "scale(1.1) rotate(225deg)" },
+          "75%": { transform: "scale(0.9) rotate(270deg)" },
+          "87.5%": { transform: "scale(1.1) rotate(315deg)" },
+          "100%": { transform: "scale(0.9) rotate(360deg)" },
+        },
       },
       aspectRatio: {
         card: "10 / 16",
