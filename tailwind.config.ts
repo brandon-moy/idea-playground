@@ -8,6 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        "letter-jump": "letter-bounce 2s linear infinite",
+      },
+      animationDelay: {
+        250: "250ms",
+        750: "750ms",
+        1250: "1250ms",
+        1750: "1750ms",
+        2250: "2250ms",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -17,6 +27,9 @@ const config: Config = {
       },
       backgroundSize: {
         shrink: "100% 9px",
+      },
+      fontFamily: {
+        "st-mono": "Share Tech Mono",
       },
       keyframes: {
         cardPan: {
@@ -59,12 +72,41 @@ const config: Config = {
             "background-size": "400%",
           },
         },
+        "letter-bounce": {
+          "0%, 25%": { transform: "translateY(0px)" },
+          "15%": { transform: "translateY(-5px)" },
+        },
+        nikkeLoad: {
+          "0%": { transform: "scale(0.9) rotate(0deg)" },
+          "7.5%": { transform: "scale(1) rotate(45deg)" },
+          "15%, 25%": { transform: "scale(0.9) rotate(90deg)" },
+          "32.5%": { transform: "scale(1) rotate(135deg)" },
+          "40%, 50%": { transform: "scale(0.9) rotate(180deg)" },
+          "57.5%": { transform: "scale(1) rotate(225deg)" },
+          "65%, 75%": { transform: "scale(0.9) rotate(270deg)" },
+          "82.5%": { transform: "scale(1) rotate(315deg)" },
+          "90%, 100%": { transform: "scale(0.9) rotate(360deg)" },
+        },
+        nikkeDarkX: {
+          "0%, 40%, 50%, 90%, 100%": { backgroundColor: "rgb(75, 85, 99)" },
+          "7.5%, 32.5%, 57.5%, 82.5%": {
+            backgroundColor: "rgb(156, 163, 175)",
+          },
+          "15%, 25%, 65%, 75%": { backgroundColor: "rgb(209, 213, 219)" },
+        },
+        nikkeLightX: {
+          "0%, 40%, 50%, 90%, 100%": { backgroundColor: "rgb(209, 213, 219)" },
+          "7.5%, 32.5%, 57.5%, 82.5%": {
+            backgroundColor: "rgb(156, 163, 175)",
+          },
+          "15%, 25%, 65%, 75%": { backgroundColor: "rgb(75, 85, 99)" },
+        },
       },
       aspectRatio: {
         card: "10 / 16",
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animation-delay")],
 };
 export default config;
