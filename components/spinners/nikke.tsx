@@ -5,20 +5,20 @@ export default function NikkeLoader() {
       {/* x  container */}
       <div className="flex w-full h-full flex-wrap mb-2 scale-90 animate-[nikkeLoad_4s_linear_infinite]">
         <div className="relative basis-1/2">
-          <div className="w-[15px] h-[2.5px] bg-gray-300 rotate-45 absolute translate-x-1 translate-y-[0.6rem] animte-nikke-light-x"></div>
-          <div className="w-[15px] h-[4px] bg-gray-300 -rotate-45 absolute translate-x-[0.23rem] translate-y-[0.55rem] border-t-[1.5px] border-black animte-nikke-light-x"></div>
+          <div className="w-[15px] h-[2.5px] rotate-45 absolute translate-x-1 translate-y-[0.6rem] animate-[nikkeLightX_4s_ease_infinite]"></div>
+          <div className="w-[15px] h-[4px] -rotate-45 absolute translate-x-[0.23rem] translate-y-[0.55rem] border-t-[1.5px] border-black animate-[nikkeLightX_4s_ease_infinite]"></div>
         </div>
         <div className="relative basis-1/2">
-          <div className="w-[15px] h-[2.5px] bg-gray-600 rotate-45 absolute translate-x-1 translate-y-[0.6rem] animate-[nikke-dark-x_4s_ease_infinite]"></div>
-          <div className="w-[15px] h-[4px] bg-gray-600 -rotate-45 absolute translate-x-[0.23rem] translate-y-[0.55rem] border-t-[1.5px] border-black animate-[nikke-dark-x_4s_ease_infinite]"></div>
+          <div className="w-[15px] h-[2.5px] rotate-45 absolute translate-x-1 translate-y-[0.6rem] animate-[nikkeDarkX_4s_ease_infinite]"></div>
+          <div className="w-[15px] h-[4px] -rotate-45 absolute translate-x-[0.23rem] translate-y-[0.55rem] border-t-[1.5px] border-black animate-[nikkeDarkX_4s_ease_infinite]"></div>
         </div>
         <div className="relative basis-1/2">
-          <div className="w-[15px] h-[2.5px] bg-gray-600 rotate-45 absolute translate-x-1 translate-y-[0.6rem]"></div>
-          <div className="w-[15px] h-[4px] bg-gray-600 -rotate-45 absolute translate-x-[0.23rem] translate-y-[0.55rem] border-t-[1.5px] border-black"></div>
+          <div className="w-[15px] h-[2.5px] rotate-45 absolute translate-x-1 translate-y-[0.6rem] animate-[nikkeDarkX_4s_ease_infinite]"></div>
+          <div className="w-[15px] h-[4px] -rotate-45 absolute translate-x-[0.23rem] translate-y-[0.55rem] border-t-[1.5px] border-black animate-[nikkeDarkX_4s_ease_infinite]"></div>
         </div>
         <div className="relative basis-1/2">
-          <div className="w-[15px] h-[2.5px] bg-gray-300 rotate-45 absolute translate-x-1 translate-y-[0.6rem] animte-nikke-light-x"></div>
-          <div className="w-[15px] h-[4px] bg-gray-300 -rotate-45 absolute translate-x-[0.23rem] translate-y-[0.55rem] border-t-[1.5px] border-black animte-nikke-light-x"></div>
+          <div className="w-[15px] h-[2.5px] rotate-45 absolute translate-x-1 translate-y-[0.6rem] animate-[nikkeLightX_4s_ease_infinite]"></div>
+          <div className="w-[15px] h-[4px] -rotate-45 absolute translate-x-[0.23rem] translate-y-[0.55rem] border-t-[1.5px] border-black animate-[nikkeLightX_4s_ease_infinite]"></div>
         </div>
       </div>
       {/* LOADING... container */}

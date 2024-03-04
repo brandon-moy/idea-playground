@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        "letter-jump": "letter-bounce 2.5s linear infinite",
+        "letter-jump": "letter-bounce 2s linear infinite",
       },
       animationDelay: {
         250: "250ms",
@@ -73,8 +73,8 @@ const config: Config = {
           },
         },
         "letter-bounce": {
-          "0%, 20%": { transform: "translateY(0px)" },
-          "10%": { transform: "translateY(-5px)" },
+          "0%, 25%": { transform: "translateY(0px)" },
+          "15%": { transform: "translateY(-5px)" },
         },
         nikkeLoad: {
           "0%": { transform: "scale(0.9) rotate(0deg)" },
@@ -91,7 +91,7 @@ const config: Config = {
           "90%": { transform: "scale(0.9) rotate(360deg)" },
           "100%": { transform: "scale(0.9) rotate(360deg)" },
         },
-        "nikke-dark-x": {
+        nikkeDarkX: {
           "0%": { backgroundColor: "rgb(75, 85, 99)" },
           "7.5%": { backgroundColor: "rgb(156, 163, 175" },
           "15%": { backgroundColor: "rgb(209, 213, 219)" },
@@ -106,7 +106,7 @@ const config: Config = {
           "90%": { backgroundColor: "rgb(75, 85, 99)" },
           "100%": { backgroundColor: "rgb(75, 85, 99)" },
         },
-        "nikke-light-x": {
+        nikkeLightX: {
           "0%, 100%": { backgroundColor: "rgb(209, 213, 219)" },
           "50%": { backgroundColor: "rgb(156, 163, 175" },
         },
