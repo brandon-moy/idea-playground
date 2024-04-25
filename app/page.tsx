@@ -9,6 +9,12 @@ export default function Home() {
         imageSrc="/scroll.gif"
         imageAlt="Gif of Infinite Scroll"
       />
+      <HomeCard
+        title="Image Pan"
+        href="/image-pan"
+        imageSrc="/pan.gif"
+        imageAlt="Gif of Image Pan"
+      />
     </main>
   );
 }
